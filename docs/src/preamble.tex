@@ -11,3 +11,10 @@
 
 \usepackage{hyperref}
 \AtEndDocument{\label{lastpage}}
+
+
+    \usepackage{fancyhdr} % пакет для установки колонтитулов
+    \pagestyle{fancy} % смена стиля оформления страниц
+    \fancyhf{} % очистка текущих значений
+    \fancyhead[C]{\thepage} % установка верхнего колонтитула
+    \renewcommand{\headrulewidth}{0pt} % убрать разделительную линию
